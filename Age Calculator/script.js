@@ -1,13 +1,13 @@
-var btn = document.querySelector('.caculate-btn')
-var msg = document.querySelector('.msg-text')
+const btn = document.querySelector('.caculate-btn')
+const msg = document.querySelector('.msg-text')
 
 btn.addEventListener('click', () => {
-    var dob = document.querySelector('.inputDob')
+    const dob = document.querySelector('.inputDob')
     if(!isValidInput(dob.value)){
         alert('Please enter your birthday')
         return;
     }
-    var age = calculateAge(dob.value);
+    const age = calculateAge(dob.value);
 
     msg.textContent = `Your age is ${age} years old`;
 })
